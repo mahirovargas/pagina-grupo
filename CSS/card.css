@@ -1,0 +1,153 @@
+.fondo {
+    background-color: red;
+    align-items: center;
+    text-align: center;
+    color: white;
+    max-width: 1200px;
+    margin: 2px auto;
+    display: grid;
+}
+
+.container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.event-grid {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.event-card {
+    width: auto 2px;
+    height: auto;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.event-image:hover {
+    transform: scale(1.05);
+}
+
+.event-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+}
+
+.event-location {
+    text-align: center;
+    color: #666;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.event-button {
+    display: block;
+    width: 100%;
+    padding: 2px;
+    background-color: #125cb7;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.event-button:hover {
+    cursor: pointer;
+    color: #feca4e;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-image {
+    height: 150px;
+    /* Altura fija para uniformidad */
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garantiza que la imagen llene el espacio */
+}
+
+.event-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.event-card p {
+    color: #777;
+    margin: 5px 0 15px;
+}
+
+.event-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: ackground-colo 0, 2;
+    margin-top: auto;
+    /* Empuja el botón al final de la tarjeta */
+}
+
+.event-card button:hover {
+    background-color: #125cb7;
+    color: #feca4e;
+}
